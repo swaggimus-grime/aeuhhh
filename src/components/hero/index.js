@@ -4,7 +4,7 @@ import timage from '../../res/tim.jpg';
 
 const Hero = () => {
     return (
-        <HeroContainer>
+        <HeroContainer id='hero'>
             <Background>
                 <HeroImg src={timage} alt='bg'/>
             </Background>

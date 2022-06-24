@@ -4,7 +4,8 @@ import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar'
 import Footer from '../components/footer';
 import Info from '../components/info';
-import { aboutData } from '../components/info/data';
+import { aeuhhhData1, aeuhhhData2, aeuhhhData3 } from '../components/info/data';
+import Staff from '../components/staff';
 
 const Home = () => {
     const [sbOpened, setOpenSB] = useState(false);
@@ -15,7 +16,10 @@ const Home = () => {
             <Sidebar isOpen={sbOpened} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <Hero />
-            <Info {...aboutData}/>
+            <Info {...aeuhhhData1}/>
+            <Info {...aeuhhhData2}/>
+            <Info {...aeuhhhData3}/>
+            <Staff />
             <Footer />
         </>
     )

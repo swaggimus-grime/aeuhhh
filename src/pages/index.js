@@ -7,14 +7,14 @@ import Info from '../components/info';
 import { aeuhhhData1, aeuhhhData2, aeuhhhData3 } from '../components/info/data';
 import Staff from '../components/staff';
 
-const Home = () => {
+const HomePage = () => {
     const [sbOpened, setOpenSB] = useState(false);
     const toggle = () => setOpenSB(!sbOpened);
 
     return (
         <>
             <Sidebar isOpen={sbOpened} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
+            <Navbar  toggle={toggle}/>
             <Hero />
             <Info {...aeuhhhData1}/>
             <Info {...aeuhhhData2}/>
@@ -25,4 +25,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default HomePage

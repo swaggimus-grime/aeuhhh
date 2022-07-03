@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from "./pages";
-import About from "./pages/about";
+import HomePage from "./pages";
+import SendPage from "./pages/sendPage";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} exact/>
-        <Route path='about' element={<About />} exact/>
+        <Route path="/" element={<HomePage />} exact/>
+        <Route path="/send" element={<SendPage />} exact/>
       </Routes>
     </Router>
   );

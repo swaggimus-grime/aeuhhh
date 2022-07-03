@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroContainer, Background, HeroImg, H1, P, HeroOverlay } from './styles';
+import { HeroContainer, Background, HeroImg, H1, HeroOverlay, SendBtn } from './styles';
 import timage from '../../res/tim.jpg';
 
 const Hero = () => {
@@ -10,6 +10,7 @@ const Hero = () => {
             </Background>
             <HeroOverlay>
                 <H1>AEUHHH</H1>
+                <SendBtn to={'./send'}>Send Aeuhhh</SendBtn>
             </HeroOverlay>
         </HeroContainer>
     );

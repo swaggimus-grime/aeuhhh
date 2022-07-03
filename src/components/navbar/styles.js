@@ -82,8 +82,13 @@ export const NavLink = styled(SLink)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    transition: .2s all ease-in-out;
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #ffffff;
+    }
+
+    &:hover {
+        border-bottom: 3px solid #ffffff;
     }
 `;
